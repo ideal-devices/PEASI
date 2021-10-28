@@ -71,19 +71,6 @@ Wire Wire Line
 	1300 2500 1300 2700
 Wire Wire Line
 	1900 2500 1300 2500
-$Comp
-L gdew042t2:GDEW042T2_4_2_INCH_EINK_DISPLAY U?
-U 1 1 6177E94D
-P 2100 700
-AR Path="/6177E94D" Ref="U?"  Part="1" 
-AR Path="/6177D1DF/6177E94D" Ref="U?"  Part="1" 
-F 0 "U?" H 2550 750 59  0000 L CNN
-F 1 "GDEW042T2_4_2_INCH_EINK_DISPLAY" V 3100 -1300 59  0000 L CNN
-F 2 "GDEW042T2_FPC" H 2100 700 50  0001 C CNN
-F 3 "" H 2100 700 50  0001 C CNN
-	1    2100 700 
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	1900 2400 900  2400
 Wire Wire Line
@@ -448,25 +435,6 @@ F 3 "~" H 1350 5400 50  0001 C CNN
 	1    1350 5400
 	1    0    0    -1  
 $EndComp
-$Comp
-L SI1304BDL-T1-E3:SI1304BDL-T1-E3 IC?
-U 1 1 617CCA8D
-P 1500 5150
-F 0 "IC?" V 2150 5100 50  0000 R CNN
-F 1 "SI1304BDL-T1-E3" H 2400 4900 50  0000 R CNN
-F 2 "SOT65P210X110-3N" H 2150 5250 50  0001 L CNN
-F 3 "http://www.vishay.com/docs/73480/si1304bd.pdf" H 2150 5150 50  0001 L CNN
-F 4 "SI1304BDL-T1-E3, N-channel MOSFET Transistor 0.85 A 30 V, 3-Pin SC-70" H 2150 5050 50  0001 L CNN "Description"
-F 5 "1.1" H 2150 4950 50  0001 L CNN "Height"
-F 6 "Vishay" H 2150 4850 50  0001 L CNN "Manufacturer_Name"
-F 7 "SI1304BDL-T1-E3" H 2150 4750 50  0001 L CNN "Manufacturer_Part_Number"
-F 8 "781-SI1304BDL-E3" H 2150 4650 50  0001 L CNN "Mouser Part Number"
-F 9 "https://www.mouser.com/Search/Refine.aspx?Keyword=781-SI1304BDL-E3" H 2150 4550 50  0001 L CNN "Mouser Price/Stock"
-F 10 "" H 2150 4450 50  0001 L CNN "Arrow Part Number"
-F 11 "" H 2150 4350 50  0001 L CNN "Arrow Price/Stock"
-	1    1500 5150
-	0    -1   -1   0   
-$EndComp
 Connection ~ 900  4200
 Wire Wire Line
 	900  4100 900  4200
@@ -572,4 +540,34 @@ Wire Notes Line
 	3500 2100 3500 500 
 Text Notes 3550 650  0    50   ~ 0
 MICRO SD CARD SLOT
+$Comp
+L gdew042t2:GDEW042T2_4_2_INCH_EINK_DISPLAY U?
+U 1 1 617B1130
+P 2100 700
+F 0 "U?" H 2550 750 59  0000 L CNN
+F 1 "GDEW042T2_4_2_INCH_EINK_DISPLAY" V 3300 -1350 59  0000 L CNN
+F 2 "GDEW042T2_FPC" H 2100 700 50  0001 C CNN
+F 3 "" H 2100 700 50  0001 C CNN
+	1    2100 700 
+	1    0    0    -1  
+$EndComp
+$Comp
+L SI1304BDL-T1-E3:SI1304BDL-T1-E3 IC?
+U 1 1 617B32F2
+P 1500 5150
+F 0 "IC?" V 2150 5100 50  0000 R CNN
+F 1 "SI1304BDL-T1-E3" H 2400 5350 50  0000 R CNN
+F 2 "SOT65P210X110-3N" H 2150 5250 50  0001 L CNN
+F 3 "http://www.vishay.com/docs/73480/si1304bd.pdf" H 2150 5150 50  0001 L CNN
+F 4 "SI1304BDL-T1-E3, N-channel MOSFET Transistor 0.85 A 30 V, 3-Pin SC-70" H 2150 5050 50  0001 L CNN "Description"
+F 5 "1.1" H 2150 4950 50  0001 L CNN "Height"
+F 6 "Vishay" H 2150 4850 50  0001 L CNN "Manufacturer_Name"
+F 7 "SI1304BDL-T1-E3" H 2150 4750 50  0001 L CNN "Manufacturer_Part_Number"
+F 8 "781-SI1304BDL-E3" H 2150 4650 50  0001 L CNN "Mouser Part Number"
+F 9 "https://www.mouser.com/Search/Refine.aspx?Keyword=781-SI1304BDL-E3" H 2150 4550 50  0001 L CNN "Mouser Price/Stock"
+F 10 "" H 2150 4450 50  0001 L CNN "Arrow Part Number"
+F 11 "" H 2150 4350 50  0001 L CNN "Arrow Price/Stock"
+	1    1500 5150
+	0    -1   -1   0   
+$EndComp
 $EndSCHEMATC

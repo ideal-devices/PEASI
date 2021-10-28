@@ -113,7 +113,7 @@ NoConn ~ 1700 2450
 NoConn ~ 1700 2550
 NoConn ~ 1700 2750
 NoConn ~ 1700 2850
-Text GLabel 1700 850  2    50   Input ~ 0
+Text GLabel 1700 850  2    50   Output ~ 0
 VBUS
 Text GLabel 2200 800  1    50   Input ~ 0
 VBUS
@@ -505,7 +505,7 @@ F 3 "~" H 5800 950 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L gas_gauge:STC3115AIJT U?
+L peasi-rescue:STC3115AIJT-gas_gauge U?
 U 1 1 6177B179
 P 5900 1200
 AR Path="/6177B179" Ref="U?"  Part="1" 
@@ -583,9 +583,6 @@ Wire Wire Line
 	5800 1200 5900 1200
 Wire Wire Line
 	5500 1050 5500 1400
-Connection ~ 5500 1400
-Wire Wire Line
-	5500 1400 5400 1400
 Wire Wire Line
 	7800 850  7800 800 
 Wire Wire Line
@@ -668,8 +665,6 @@ GG_BATD
 Wire Wire Line
 	5300 1500 5900 1500
 Wire Wire Line
-	5400 1350 5400 1400
-Wire Wire Line
 	7700 1400 7900 1400
 Wire Wire Line
 	4200 1400 4250 1400
@@ -737,4 +732,37 @@ VOLTAGE REGULATOR 3V3
 Wire Wire Line
 	4250 1400 4350 1400
 Connection ~ 4250 1400
+Text GLabel 1800 1400 2    50   BiDi ~ 0
+D-
+Text GLabel 1800 1600 2    50   BiDi ~ 0
+D+
+Wire Wire Line
+	1700 1350 1750 1350
+Wire Wire Line
+	1750 1350 1750 1400
+Wire Wire Line
+	1750 1400 1800 1400
+Wire Wire Line
+	1750 1400 1750 1450
+Wire Wire Line
+	1750 1450 1700 1450
+Connection ~ 1750 1400
+Wire Wire Line
+	1700 1550 1750 1550
+Wire Wire Line
+	1750 1550 1750 1600
+Wire Wire Line
+	1750 1600 1800 1600
+Wire Wire Line
+	1750 1600 1750 1650
+Wire Wire Line
+	1750 1650 1700 1650
+Connection ~ 1750 1600
+Wire Wire Line
+	5400 1350 5450 1350
+Wire Wire Line
+	5450 1350 5450 1400
+Wire Wire Line
+	5450 1400 5500 1400
+Connection ~ 5500 1400
 $EndSCHEMATC
