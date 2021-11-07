@@ -27,19 +27,6 @@ F 3 "https://www.usb.org/sites/default/files/documents/usb_type-c.zip" H 1250 18
 	1    0    0    -1  
 $EndComp
 $Comp
-L Regulator_Switching:TPS62203DBV U?
-U 1 1 6177B173
-P 2800 3100
-AR Path="/6177B173" Ref="U?"  Part="1" 
-AR Path="/61773D02/6177B173" Ref="U?"  Part="1" 
-F 0 "U?" H 2800 3525 50  0000 C CNN
-F 1 "TPS62203DBV" H 2800 3434 50  0000 C CNN
-F 2 "Package_TO_SOT_SMD:SOT-23-5" H 2850 2950 50  0001 L CIN
-F 3 "http://www.ti.com/lit/ds/symlink/tps62201.pdf" H 2800 3200 50  0001 C CNN
-	1    2800 3100
-	1    0    0    -1  
-$EndComp
-$Comp
 L power:GND #PWR?
 U 1 1 6185B3AF
 P 1100 3950
@@ -761,6 +748,17 @@ F 1 "STC3115AIJT" H 6800 1481 60  0000 C CNN
 F 2 "CSP-10_STM" H 6800 1440 60  0001 C CNN
 F 3 "" H 5900 1200 60  0000 C CNN
 	1    5900 1200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Regulator_Switching:TPS62205DBV U?
+U 1 1 617F3262
+P 2800 3100
+F 0 "U?" H 2800 3525 50  0000 C CNN
+F 1 "TPS62205DBV" H 2800 3434 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-23-5" H 2850 2950 50  0001 L CIN
+F 3 "http://www.ti.com/lit/ds/symlink/tps62201.pdf" H 2800 3200 50  0001 C CNN
+	1    2800 3100
 	1    0    0    -1  
 $EndComp
 $EndSCHEMATC

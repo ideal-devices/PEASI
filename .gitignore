@@ -1,1 +1,4 @@
 *.sch-bak
+.DS_STORE
+*.zip
+
